@@ -1,0 +1,70 @@
+body {
+  color: white;
+  margin: 0.7rem;
+  background-color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 750px) {
+  h2 {
+    padding: 0;
+    display: flex;
+    margin: 0;
+  }
+
+  .heading-name {
+    color: rgb(186, 186, 186);
+  }
+
+  header {
+    display: inline;
+  }
+
+  .heading-introduction {
+    font-size: clamp(2rem, 10vw, 3rem);
+    padding-right: 7rem;
+  }
+
+  .hidden-ul {
+    display: none;
+  }
+
+  .ul {
+    padding: 0;
+    float: right;
+    margin-top: -25px;
+    margin-right: 10px;
+  }
+
+  li {
+    display: inline;
+
+    z-index: 1;
+  }
+
+  /* .hidden-dott-icon {
+    display: none;
+  } */
+
+  .dott-icon-div {
+    z-index: 99;
+
+    float: right;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 40rem;
+  }
+  #dott-icon {
+    font-size: clamp(1rem, 5vw, 1.3rem);
+    cursor: pointer;
+  }
+
+  .introduction-paragraph-div {
+    padding-right: clamp(5rem, 5vw, 20rem);
+  }
+
+  .introduction-paragraph {
+    display: block;
+    text-align: left;
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+  }
+}
