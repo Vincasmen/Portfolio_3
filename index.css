@@ -20,9 +20,6 @@ body {
     display: inline;
   }
 
-  .heading-introduction-div {
-  }
-
   .heading-introduction {
     margin-top: 0.7rem;
     font-size: clamp(25px, 30vw, 40px);
