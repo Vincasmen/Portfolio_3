@@ -79,6 +79,37 @@ body {
     border-top: 1.5px solid rgb(255, 255, 255);
   }
   .my-work-heading {
+    padding-top: 1rem;
     display: flex;
+    font-size: clamp(10px, 30vw, 30px);
+  }
+  .my-rock-paper-scissors-div {
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 0.5rem;
+    padding: 4rem;
+  }
+  #info-icon-work01 {
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    margin-top: -60px;
+    margin-right: -60px;
+    cursor: pointer;
+  }
+  #icon-work01 {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    margin: auto;
+    padding: 0rem;
+    cursor: pointer;
+  }
+  .my-work01-link {
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
   }
 }
