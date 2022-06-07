@@ -6,17 +6,23 @@ body {
 }
 
 h2 {
+  display: block;
   padding: 0;
-  display: flex;
+
   margin: 0;
 }
 
 .heading-name {
   color: rgb(186, 186, 186);
+  font-size: clamp(10px, 5vw, 25px);
 }
 
-header {
-  display: inline;
+.main-header {
+  display: -ms-inline-grid;
+  grid-template-columns: 3fr;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0rem;
 }
 
 .heading-introduction {
@@ -30,22 +36,19 @@ header {
 .hidden-ul {
   display: none;
 }
-
-.ul {
-  text-align: right;
-
-  z-index: 1;
-  font-size: clamp(1px, 3vw, 20px);
-  font-weight: bold;
-  padding: 0;
-  float: right;
-  margin-top: -25px;
-  margin-right: 10px;
-}
-
 li {
   display: inline;
 
+  z-index: 1;
+}
+
+.ul {
+  background-color: #a9a9a97b;
+  text-align: center;
+  font-size: clamp(1px, 3vw, 20px);
+  font-weight: bold;
+  float: right;
+  word-spacing: 5px;
   z-index: 1;
 }
 
@@ -57,8 +60,6 @@ li {
   z-index: 99;
 
   float: right;
-
-  margin-top: -27px;
 }
 #dott-icon {
   font-size: clamp(1rem, 5vw, 1.3rem);
