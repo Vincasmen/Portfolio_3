@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="index.css" />
-     <script
+    <script
       src="https://kit.fontawesome.com/27b9d7ad5a.js"
       crossorigin="anonymous"
     ></script>
@@ -19,7 +19,6 @@
       <div>
         <ul id="ul-id" class="ul hidden-ul">
           <li>About</li>
-          <li>Skills</li>
           <li>Projects</li>
           <li>Contacts</li>
         </ul>
@@ -31,7 +30,7 @@
     <hero>
       <div class="heading-introduction-div">
         <h1 class="heading-introduction">
-          Hello my name is Jan and I am a front-end developer.
+          Hello, my name is Jan and I am a front-end developer.
         </h1>
       </div>
       <div class="introduction-paragraph-div">
@@ -94,7 +93,13 @@
       </div>
     </projects>
 
-    <form class="form-group" id="form" name="contact" method="POST" data-netlify="true">
+    <form
+      class="form-group"
+      id="form"
+      name="contact"
+      method="POST"
+      data-netlify="true"
+    >
       <p class="input-group">
         <label class="label"
           >Your Name: <input class="form-control" type="text" name="name"
@@ -111,8 +116,14 @@
           >Message: <textarea class="form-control" name="message"></textarea>
         </label>
       </p>
-      <p>
-        <button class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block type="submit">Send</button>
+      <p class="button-par">
+        <button
+          id="button-form"
+          class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
+          type="submit"
+        >
+          Send
+        </button>
       </p>
     </form>
 
