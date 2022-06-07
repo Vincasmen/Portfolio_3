@@ -94,85 +94,25 @@
       </div>
     </projects>
 
-    <div class="fcf-body">
-      <div id="fcf-form">
-        <h3 class="fcf-h3">Contact me</h3>
-
-        <form
-          name="form-netlify"
-          data-netlify="true"
-          id="fcf-form-id"
-          class="fcf-form-class"
-          method="post"
-          action="contact-form-process.php"
-        >
-          <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-              <input
-                type="text"
-                id="Name"
-                name="Name"
-                class="fcf-form-control"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-              <input
-                type="email"
-                id="Email"
-                name="Email"
-                class="fcf-form-control"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-              <textarea
-                id="Message"
-                name="Message"
-                class="fcf-form-control"
-                rows="6"
-                maxlength="3000"
-                required
-              ></textarea>
-            </div>
-          </div>
-
-          <div class="fcf-form-group">
-            <button
-              name="submit-button"
-              type="submit"
-              id="fcf-button"
-              class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
-            >
-              Send Message
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>Your Name: <input type="text" name="name" /></label>
+    <form class="form-group" id="form" name="contact" method="POST" data-netlify="true">
+      <p class="input-group">
+        <label class="label"
+          >Your Name: <input class="form-control" type="text" name="name"
+        /></label>
       </p>
-      <p>
-        <label>Your Email: <input type="email" name="email" /></label>
+      <p class="input-group">
+        <label class="label"
+          >Your Email: <input class="form-control" type="email" name="email"
+        /></label>
       </p>
 
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
+      <p class="input-group">
+        <label class="label"
+          >Message: <textarea class="form-control" name="message"></textarea>
+        </label>
       </p>
       <p>
-        <button type="submit">Send</button>
+        <button class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block type="submit">Send</button>
       </p>
     </form>
 
