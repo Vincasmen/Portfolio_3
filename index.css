@@ -19,6 +19,7 @@ h2 {
 
 .main-header {
   display: grid;
+  justify-content: center;
   /* text-align: center; */
   grid-template-columns: 1fr 0.9fr 0.1fr;
   grid-template-rows: 1fr;
@@ -32,13 +33,75 @@ h2 {
   font-size: clamp(1.9rem, 5vw, 2rem);
   /* width: clamp(5rem, 10vw, 20rem); */
   padding-right: clamp(0.5rem, 20vw, 10rem);
+  word-wrap: break-word;
+}
+
+.my-work-div {
+  /* text-align: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.my-rock-paper-scissors-div {
+  justify-content: center;
+  /* text-align: center; */
+  border: 1px solid rgb(255, 255, 255);
+  /* margin-top: 0.5rem; */
+  padding: 1rem;
+  /* min-width: 7rem;
+  max-width: 15rem; */
+}
+
+.break-after-hero {
+  border-top: 1.5px solid rgb(255, 255, 255);
+}
+.my-work-heading {
+  padding-top: 1rem;
+  display: flex;
+  font-size: clamp(1.3rem, 5vw, 2.3rem);
+}
+#info-icon-work01 {
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  /* margin-top: -60px;
+  margin-right: -60px; */
+  cursor: pointer;
+}
+#icon-work01 {
+  padding: 0rem;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  /* display: flex; */
+  text-decoration: none;
+  /* margin: auto;
+  padding: 0rem; */
+  cursor: pointer;
+}
+.my-work01-link {
+  color: white;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0rem;
+  justify-content: center;
+  min-width: auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 1023px) {
   .heading-introduction {
     text-align: left;
     margin-top: 2rem;
-    font-size: clamp(2.5rem, 5vw, 5rem);
+    font-size: clamp(2.4rem, 5vw, 5rem);
     padding-right: clamp(3rem, 5vw, 8rem);
     word-wrap: break-word;
   }
@@ -56,6 +119,7 @@ h2 {
     /* float: left; */
     padding: 0.1rem;
     margin: 0rem;
+    word-wrap: break-word;
   }
 
   .ul-class-div {
@@ -68,7 +132,7 @@ h2 {
   .ul {
     /* display: inline; */
     background-color: #007bff00;
-    font-size: clamp(1px, 3vw, 20px);
+    font-size: clamp(2px, 3vw, 20px);
     font-weight: bold;
     word-spacing: 1px;
     list-style-type: none;
@@ -184,7 +248,7 @@ h2 {
   }
 
   .introduction-paragraph-div {
-    padding-left: clamp(7rem, 5vw, 20rem);
+    padding-left: clamp(15rem, 10vw, 20rem);
     border-left: solid 1px white;
     border-top: solid 1px white;
   }
@@ -200,50 +264,16 @@ h2 {
     /* border-left: solid 1px white;
     border-top: solid 1px white; */
   }
+  .my-work-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
 }
 /* .introduction-paragraph-div {
   padding-right: clamp(1rem, 20vw, 10rem);
 } */
-
-.break-after-hero {
-  border-top: 1.5px solid rgb(255, 255, 255);
-}
-.my-work-heading {
-  padding-top: 1rem;
-  display: flex;
-  font-size: clamp(1.3rem, 5vw, 2.3rem);
-}
-.my-rock-paper-scissors-div {
-  border: 1px solid rgb(255, 255, 255);
-  margin-top: 0.5rem;
-  padding: 4rem;
-  min-width: 7rem;
-  max-width: 33rem;
-}
-#info-icon-work01 {
-  padding: 0;
-  display: flex;
-  justify-content: right;
-  margin-top: -60px;
-  margin-right: -60px;
-  cursor: pointer;
-}
-#icon-work01 {
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  text-decoration: none;
-  margin: auto;
-  padding: 0rem;
-  cursor: pointer;
-}
-.my-work01-link {
-  color: white;
-  display: block;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-}
 
 /* ------------Form------------ */
 
