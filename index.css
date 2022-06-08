@@ -29,7 +29,7 @@ h2 {
 .introduction-paragraph {
   display: block;
   text-align: left;
-  font-size: clamp(1.8rem, 5vw, 2rem);
+  font-size: clamp(1.7rem, 5vw, 2rem);
   /* width: clamp(5rem, 10vw, 20rem); */
   padding-right: clamp(0.5rem, 20vw, 10rem);
 }
@@ -38,7 +38,7 @@ h2 {
   .heading-introduction {
     text-align: left;
     margin-top: 2rem;
-    font-size: clamp(1.9rem, 5vw, 5rem);
+    font-size: clamp(2.5rem, 5vw, 5rem);
     padding-right: clamp(3rem, 5vw, 8rem);
     word-wrap: break-word;
   }
