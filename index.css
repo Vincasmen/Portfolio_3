@@ -144,6 +144,16 @@ h2 {
     margin: 0rem;
   }
 
+  .li-about {
+    cursor: pointer;
+  }
+  .li-projects {
+    cursor: pointer;
+  }
+  .li-contact {
+    cursor: pointer;
+  }
+
   /* .hidden-dott-icon {
     display: none;
   } */
@@ -307,6 +317,14 @@ h2 {
     padding-top: 0rem;
   }
 
+  .hidden {
+    display: none;
+  }
+
+  .hidden-dott-icon {
+    display: none;
+  }
+
   li {
     display: inline;
     justify-content: right;
@@ -337,6 +355,16 @@ h2 {
     float: right;
     padding: 0rem;
     margin: 0rem;
+    /* cursor: pointer; */
+  }
+
+  .li-about {
+    cursor: pointer;
+  }
+  .li-projects {
+    cursor: pointer;
+  }
+  .li-contact {
     cursor: pointer;
   }
 
@@ -354,7 +382,6 @@ h2 {
     text-align: center;
   }
   #dott-icon {
-    transition: ease-out;
     text-align: center;
     /* top: 50%;
   bottom: 50%; */
@@ -526,6 +553,10 @@ h2 {
     }
   }
 }
+
+@media screen and (min-width: 1440px) {
+}
+
 /* .introduction-paragraph-div {
   padding-right: clamp(1rem, 20vw, 10rem);
 } */
