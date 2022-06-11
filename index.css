@@ -1399,8 +1399,13 @@ h2 {
   }
 
   .introduction-paragraph-div {
-    padding-right: clamp(2rem, 5vw, 50rem);
+    /* padding-right: clamp(2rem, 5vw, 50rem); */
+    display: flex;
     border-left: solid 1px white;
+    margin: 0rem;
+    padding: 0rem;
+    justify-content: right;
+    text-align: right;
   }
 
   .introduction-paragraph {
@@ -1409,8 +1414,9 @@ h2 {
     text-align: right;
     padding: 0rem;
     margin: 0rem;
-    font-size: clamp(1rem, 4vw, 5rem);
+    font-size: clamp(3rem, 4vw, 5rem);
     width: clamp(45rem, 50vw, 55rem);
+    padding-right: clamp(1rem, 5vw, 11rem);
   }
   .my-work-div {
     justify-content: center;
@@ -1419,8 +1425,8 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
-    padding-left: clamp(1rem, 23vw, 35rem);
-    padding-right: clamp(1rem, 23vw, 35rem);
+    /* padding-left: clamp(1rem, 23vw, 35rem);
+    padding-right: clamp(1rem, 23vw, 35rem); */
   }
 
   /* .my-work-div {
