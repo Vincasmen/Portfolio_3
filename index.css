@@ -1414,8 +1414,8 @@ h2 {
     text-align: right;
     padding: 0rem;
     margin: 0rem;
-    font-size: clamp(3rem, 4vw, 5rem);
-    width: clamp(45rem, 50vw, 55rem);
+    /* font-size: clamp(3rem, 4vw, 5rem); */
+    width: clamp(20rem, 60vw, 75rem);
     padding-right: clamp(1rem, 5vw, 11rem);
   }
   .my-work-div {
@@ -1498,8 +1498,8 @@ h2 {
     justify-content: center;
     grid-template-columns: 1fr;
     margin-top: 2rem;
-    margin-left: clamp(5rem, 23vw, 30rem);
-    margin-right: clamp(5rem, 23vw, 30rem);
+    margin-left: clamp(5rem, 23vw, 35rem);
+    margin-right: clamp(5rem, 23vw, 35rem);
     /* padding: 0rem; */
     font-size: clamp(1rem, 5vw, 1.2rem);
     font-weight: 400;
