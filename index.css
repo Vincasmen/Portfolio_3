@@ -16,17 +16,27 @@ h2 {
   color: rgb(186, 186, 186);
   font-size: clamp(10px, 5vw, 25px);
 }
-
-.main-header {
+/* .main-header {
   display: grid;
   justify-content: center;
-  /* text-align: center; */
   grid-template-columns: 1fr 0.9fr 0.1fr;
   grid-template-rows: 1fr;
   gap: 0px;
   margin-top: 0rem;
   padding-top: 0rem;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 99%;
+  backdrop-filter: blur(2px);
+}
+
+.padding {
+  padding-top: 45px;
+} */
+
 .introduction-paragraph {
   display: block;
   text-align: left;
@@ -46,6 +56,28 @@ h2 {
     font-size: clamp(2.4rem, 5vw, 5rem);
     padding-right: clamp(3rem, 5vw, 8rem);
     word-wrap: break-word;
+  }
+
+  .main-header {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 0.9fr 0.1fr;
+    grid-template-rows: 1fr;
+    gap: 0px;
+    margin-top: 0rem;
+    padding-top: 0rem;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 94%;
+    /* padding-top: 10px; */
+    backdrop-filter: blur(2px);
+  }
+
+  .padding {
+    padding-top: 35px;
   }
   .hidden-ul {
     display: none;
@@ -108,6 +140,7 @@ h2 {
   }
   #dott-icon {
     text-align: center;
+    padding-top: 10px;
     /* top: 50%;
   bottom: 50%; */
     /* display: flex; */
@@ -408,14 +441,14 @@ h2 {
     padding-right: clamp(20rem, 40vw, 37rem);
     padding-left: clamp(1rem, 50vw, 5rem);
     word-wrap: break-word;
-    border-right: solid 1px white;
-    border-bottom: solid 1px white;
+    /* border-right: solid 1px white;
+    border-bottom: solid 1px white; */
   }
 
   .introduction-paragraph-div {
     padding-left: clamp(20rem, 40vw, 37rem);
     padding-right: clamp(1rem, 50vw, 5rem);
-    border-left: solid 1px white;
+    /* border-left: solid 1px white; */
     /* border-top: solid 1px white; */
   }
   .introduction-paragraph {
@@ -734,14 +767,14 @@ h2 {
     padding-left: clamp(5rem, 20vw, 5rem);
 
     word-wrap: break-word;
-    border-right: solid 1px white;
-    border-bottom: solid 1px white;
+    /* border-right: solid 1px white;
+    border-bottom: solid 1px white; */
   }
 
   .introduction-paragraph-div {
     padding-left: clamp(20rem, 40vw, 37rem);
     padding-right: clamp(1rem, 50vw, 5rem);
-    border-left: solid 1px white;
+    /* border-left: solid 1px white; */
     /* border-top: solid 1px white; */
   }
   .introduction-paragraph {
@@ -1061,14 +1094,14 @@ h2 {
     padding-left: clamp(5rem, 20vw, 5rem);
 
     word-wrap: break-word;
-    border-right: solid 1px white;
-    border-bottom: solid 1px white;
+    /* border-right: solid 1px white;
+    border-bottom: solid 1px white; */
   }
 
   .introduction-paragraph-div {
     padding-left: clamp(20rem, 40vw, 37rem);
     padding-right: clamp(1rem, 50vw, 5rem);
-    border-left: solid 1px white;
+    /* border-left: solid 1px white; */
     /* border-top: solid 1px white; */
   }
   .introduction-paragraph {
@@ -1394,14 +1427,14 @@ h2 {
   }
 
   .heading-introduction-div {
-    border-right: solid 1px white;
-    border-bottom: solid 1px white;
+    /* border-right: solid 1px white;
+    border-bottom: solid 1px white; */
   }
 
   .introduction-paragraph-div {
     /* padding-right: clamp(2rem, 5vw, 50rem); */
     display: flex;
-    border-left: solid 1px white;
+    /* border-left: solid 1px white; */
     margin: 0rem;
     padding: 0rem;
     justify-content: right;
