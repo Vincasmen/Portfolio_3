@@ -79,9 +79,11 @@ h2 {
     position: fixed;
     top: 0;
     width: 95.3%;
+    color: #ffffff;
     /* padding-top: 10px; */
     backdrop-filter: blur(6px);
-    border-bottom: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
   }
 
   .padding {
