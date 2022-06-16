@@ -53,6 +53,42 @@ h2 {
   word-wrap: break-word;
 }
 
+#footer-div {
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 0rem;
+}
+.footer-anchor {
+  font-size: clamp(1.4rem, 1.5vw, 1.5rem);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-icons {
+  display: grid;
+  grid-template-columns: 0.04fr 0.04fr 0.04fr;
+  color: white;
+  font-size: clamp(1rem, 3vw, 6rem);
+
+  justify-content: center;
+}
+
+.fab {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fab:hover {
+  text-shadow: red -2px 0, cyan 2px 0;
+}
+
+.footer-heart {
+  text-shadow: red -2px 0, cyan 2px 0;
+}
+
 /*  * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERY 1023 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media screen and (max-width: 1023px) {
@@ -1593,11 +1629,6 @@ h2 {
     width: clamp(45rem, 50vw, 55rem);
   }
 
-  .heading-introduction-div {
-    /* border-right: solid 1px white;
-    border-bottom: solid 1px white; */
-  }
-
   .introduction-paragraph-div {
     /* padding-right: clamp(2rem, 5vw, 50rem); */
     display: flex;
@@ -1813,7 +1844,7 @@ h2 {
     color: rgb(0, 0, 0);
     background-color: #ffffff;
     font-weight: 500;
-    font-size: xx-large;
+    font-size: x-large;
     border-color: #ffffff;
     transition: 0.7s;
   }
