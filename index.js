@@ -35,8 +35,10 @@ const infoIcon = document.getElementById("info-icon-work01");
 const infoOverlay = document.getElementById("my-work-info-overlay");
 
 infoOverlay.classList.add("overlay-hidden");
+infoIcon.classList.remove("absolute-class");
 
 infoIcon.addEventListener("click", function () {
   console.log("clicked");
   infoOverlay.classList.toggle("overlay-hidden");
+  infoIcon.classList.toggle("absolute-class");
 });
