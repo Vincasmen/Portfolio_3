@@ -53,42 +53,6 @@ h2 {
   word-wrap: break-word;
 }
 
-#footer-div {
-  color: white;
-  text-align: center;
-  margin: auto;
-  padding: 0rem;
-}
-.footer-anchor {
-  font-size: clamp(1.4rem, 1.5vw, 1.5rem);
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.footer-icons {
-  display: grid;
-  grid-template-columns: 0.04fr 0.04fr 0.04fr;
-  color: rgb(255, 0, 0);
-  font-size: clamp(3rem, 3.5vw, 4rem);
-
-  justify-content: center;
-}
-
-.fab {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.fab:hover {
-  text-shadow: red -2px 0, cyan 2px 0;
-}
-
-.footer-heart {
-  text-shadow: red -2px 0, cyan 2px 0;
-}
-
 /*  * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERY 1023 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media screen and (max-width: 1023px) {
@@ -410,6 +374,7 @@ h2 {
   }
   .footer-anchor {
     font-size: clamp(1rem, 1.3vw, 1.5rem);
+
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -418,9 +383,10 @@ h2 {
   .footer-icons {
     display: grid;
     grid-template-columns: 0.04fr 0.04fr 0.04fr;
-    color: white;
-    font-size: clamp(2.5rem, 3vw, 4rem);
+    color: rgb(255, 255, 255);
+    font-size: clamp(2rem, 4vw, 5rem);
     gap: 10px;
+    padding-top: 0.3rem;
     justify-content: center;
   }
 
@@ -806,7 +772,7 @@ h2 {
     padding: 0rem;
   }
   .footer-anchor {
-    font-size: clamp(1.4rem, 1.5vw, 1.5rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -816,7 +782,8 @@ h2 {
     display: grid;
     grid-template-columns: 0.04fr 0.04fr 0.04fr;
     color: rgb(255, 0, 0);
-    font-size: clamp(3rem, 3.5vw, 4rem);
+    font-size: clamp(2.5rem, 3.5vw, 4rem);
+    gap: 10px;
 
     justify-content: center;
   }
