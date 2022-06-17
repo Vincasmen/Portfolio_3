@@ -116,7 +116,7 @@ h2 {
   .ul {
     /* display: inline; */
     background-color: #007bff00;
-    font-size: clamp(2px, 3vw, 20px);
+    font-size: clamp(15px, 3vw, 20px);
     font-weight: bold;
     word-spacing: 1px;
     list-style-type: none;
