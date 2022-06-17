@@ -16,7 +16,12 @@ h2 {
 }
 
 .heading-name-div {
+  /* display: flex; */
   position: relative;
+  text-align: left;
+  justify-content: left;
+  padding: 0rem;
+  margin: 0rem;
   z-index: 1;
   color: rgb(186, 186, 186);
   font-size: clamp(10px, 5vw, 25px);
@@ -116,7 +121,7 @@ h2 {
   .ul {
     /* display: inline; */
     background-color: #007bff00;
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: clamp(14px, 3vw, 20px);
     font-weight: bold;
     word-spacing: 1px;
     list-style-type: none;
