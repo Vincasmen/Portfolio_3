@@ -69,8 +69,8 @@ h2 {
 .footer-icons {
   display: grid;
   grid-template-columns: 0.04fr 0.04fr 0.04fr;
-  color: white;
-  font-size: clamp(1rem, 3vw, 6rem);
+  color: rgb(255, 0, 0);
+  font-size: clamp(3rem, 3.5vw, 4rem);
 
   justify-content: center;
 }
@@ -401,6 +401,42 @@ h2 {
   }
 
   /* * --------------------------------------End of form--------------------------------------------------- */
+
+  #footer-div {
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 0rem;
+  }
+  .footer-anchor {
+    font-size: clamp(1.4rem, 1.5vw, 1.5rem);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .footer-icons {
+    display: grid;
+    grid-template-columns: 0.04fr 0.04fr 0.04fr;
+    color: white;
+    font-size: clamp(2.5rem, 3vw, 4rem);
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .fab {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .fab:hover {
+    text-shadow: red -2px 0, cyan 2px 0;
+  }
+
+  .footer-heart {
+    text-shadow: red -2px 0, cyan 2px 0;
+  }
 }
 
 /*  * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERY 1024 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -761,6 +797,42 @@ h2 {
     #button-form {
       transition: none;
     }
+  }
+
+  #footer-div {
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 0rem;
+  }
+  .footer-anchor {
+    font-size: clamp(1.4rem, 1.5vw, 1.5rem);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .footer-icons {
+    display: grid;
+    grid-template-columns: 0.04fr 0.04fr 0.04fr;
+    color: rgb(255, 0, 0);
+    font-size: clamp(3rem, 3.5vw, 4rem);
+
+    justify-content: center;
+  }
+
+  .fab {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .fab:hover {
+    text-shadow: red -2px 0, cyan 2px 0;
+  }
+
+  .footer-heart {
+    text-shadow: red -2px 0, cyan 2px 0;
   }
 }
 
@@ -1486,6 +1558,42 @@ h2 {
     #button-form {
       transition: none;
     }
+  }
+
+  #footer-div {
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 0rem;
+  }
+  .footer-anchor {
+    font-size: clamp(1.4rem, 1.5vw, 1.5rem);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .footer-icons {
+    display: grid;
+    grid-template-columns: 0.04fr 0.04fr 0.04fr;
+    color: rgb(255, 0, 0);
+    font-size: clamp(3rem, 3.5vw, 4rem);
+
+    justify-content: center;
+  }
+
+  .fab {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .fab:hover {
+    text-shadow: red -2px 0, cyan 2px 0;
+  }
+
+  .footer-heart {
+    text-shadow: red -2px 0, cyan 2px 0;
   }
 }
 
