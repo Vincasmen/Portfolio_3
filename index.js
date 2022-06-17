@@ -28,3 +28,15 @@ function scrollFunction() {
     introDiv.classList.remove("padding");
   }
 }
+
+// !Info overlay for my projects
+
+const infoIcon = document.getElementById("info-icon-work01");
+const infoOverlay = document.getElementById("my-work-info-overlay");
+
+infoOverlay.classList.add("overlay-hidden");
+
+infoIcon.addEventListener("click", function () {
+  console.log("clicked");
+  infoOverlay.classList.toggle("overlay-hidden");
+});

@@ -7,12 +7,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 h2 {
   display: inline;
   grid-template-columns: 0.1fr;
   padding: 0;
   margin: 0;
   overflow: hidden;
+  cursor: pointer;
 }
 .heading-name:hover {
   text-shadow: red -2px 0, cyan 2px 0;
@@ -28,7 +34,6 @@ h2 {
   z-index: 1;
   color: rgb(186, 186, 186);
   font-size: clamp(10px, 5vw, 25px);
-  cursor: pointer;
   overflow: hidden;
 }
 
@@ -124,7 +129,6 @@ h2 {
 
   .ul {
     /* display: inline; */
-    background-color: #007bff00;
     font-size: clamp(18px, 4vw, 25px);
     font-weight: bold;
     word-spacing: 1px;
@@ -196,6 +200,7 @@ h2 {
     margin: 0rem;
     padding: 0rem;
   }
+
   .my-rock-paper-scissors-div {
     justify-content: center;
     /* text-align: center; */
@@ -215,6 +220,7 @@ h2 {
     font-size: clamp(1.3rem, 5vw, 2.3rem);
   }
   #info-icon-work01 {
+    z-index: 5;
     padding: 0;
     display: flex;
     justify-content: right;
@@ -223,6 +229,7 @@ h2 {
     cursor: pointer;
   }
   #icon-work01 {
+    z-index: 5;
     padding: 0rem;
     margin: auto;
     text-align: center;
@@ -242,11 +249,33 @@ h2 {
   }
 
   .card-div {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     padding: 0rem;
     justify-content: center;
     min-width: auto;
+    text-align: center;
+  }
+
+  .overlay-hidden {
+    display: none;
+    color: hotpink;
+  }
+
+  .my-work-info-overlay {
+    /* display: inline-block; */
+    z-index: 1;
+    position: absolute;
+    top: 38%;
+    left: 0;
+    height: 62%;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
     text-align: center;
   }
 
@@ -420,7 +449,7 @@ h2 {
 
 @media screen and (min-width: 1024px) {
   .main-header {
-    color: blueviolet;
+    color: rgb(255, 255, 255);
     display: grid;
     /* text-align: center; */
     grid-template-columns: 1fr 1fr;
@@ -818,7 +847,7 @@ h2 {
 
 @media screen and (min-width: 1440px) {
   .main-header {
-    color: hotpink;
+    color: rgb(255, 255, 255);
     display: grid;
     /* text-align: center; */
     grid-template-columns: 1fr 1fr;
@@ -1180,7 +1209,7 @@ h2 {
 
 @media screen and (min-width: 1540px) {
   .main-header {
-    color: rgb(0, 94, 226);
+    color: rgb(255, 255, 255);
     display: grid;
     /* text-align: center; */
     grid-template-columns: 1fr 1fr;
