@@ -8,24 +8,28 @@ body {
 }
 
 h2 {
+  display: inline;
+  grid-template-columns: 0.1fr;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 .heading-name:hover {
   text-shadow: red -2px 0, cyan 2px 0;
 }
 
 .heading-name-div {
-  /* display: flex; */
-  position: relative;
+  display: block;
+  /* position: relative; */
   text-align: left;
-  justify-content: left;
+  /* justify-content: left; */
   padding: 0rem;
   margin: 0rem;
   z-index: 1;
   color: rgb(186, 186, 186);
   font-size: clamp(10px, 5vw, 25px);
   cursor: pointer;
+  overflow: hidden;
 }
 
 /* .main-header {
@@ -121,11 +125,12 @@ h2 {
   .ul {
     /* display: inline; */
     background-color: #007bff00;
-    font-size: clamp(14px, 3vw, 20px);
+    font-size: clamp(10px, 4vw, 20px);
     font-weight: bold;
     word-spacing: 1px;
     list-style-type: none;
     float: right;
+    text-align: center;
     padding: 0rem;
     margin: 0rem;
   }
