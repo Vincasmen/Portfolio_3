@@ -191,18 +191,18 @@ h2 {
   }
 
   .my-work-div {
+    position: relative;
     text-align: center;
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr; */
-    /* max-width: 15rem; */
     margin: 0rem;
     padding: 0rem;
   }
 
   .my-rock-paper-scissors-div {
     justify-content: center;
+    position: relative;
     /* text-align: center; */
     border: 1px solid rgb(255, 255, 255);
     /* margin-top: 0.5rem; */
@@ -220,8 +220,6 @@ h2 {
     font-size: clamp(1.3rem, 5vw, 2.3rem);
   }
 
-  /* TODO ____ ____ ____  Finish info overlay for all device sizes____ ____ ____ */
-
   .absolute-class {
     display: contents;
     position: absolute;
@@ -232,7 +230,7 @@ h2 {
 
   #info-icon-work01 {
     position: relative;
-    z-index: 5;
+    z-index: 2;
     padding: 0;
     display: flex;
     justify-content: right;
@@ -241,7 +239,7 @@ h2 {
     cursor: pointer;
   }
   #icon-work01 {
-    z-index: 5;
+    z-index: 2;
     padding: 0rem;
     margin: auto;
     text-align: center;
@@ -278,9 +276,10 @@ h2 {
     /* display: inline-block; */
     /* z-index: 1; */
     position: absolute;
-    top: 17%;
-    left: 0;
-    height: 83%;
+    /* top: clamp(18%, 20vw, 20%); */
+    top: 0%;
+    right: 0%;
+    height: 100%;
     width: 100%;
     margin: 0rem;
     padding: 0rem;
@@ -290,7 +289,7 @@ h2 {
   }
 
   .overlay-paragraph {
-    position: inherit;
+    position: relative;
     justify-content: center;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -623,28 +622,20 @@ h2 {
     border-top: solid 1px white; */
   }
   .my-work-div {
+    position: relative;
+    text-align: center;
     justify-content: center;
-    /* text-align: center; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
-    padding-left: clamp(1rem, 23vw, 35rem);
-    padding-right: clamp(1rem, 23vw, 35rem);
+    padding-left: clamp(1rem, 20vw, 35rem);
+    padding-right: clamp(1rem, 20vw, 35rem);
   }
 
-  /* .my-work-div {
-    text-align: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    max-width: 15rem;
-    margin: 0rem;
-    padding: 0rem;
-  } */
   .my-rock-paper-scissors-div {
     justify-content: center;
+    position: relative;
     /* text-align: center; */
     border: 1px solid rgb(255, 255, 255);
     /* margin-top: 0.5rem; */
@@ -661,7 +652,18 @@ h2 {
     display: flex;
     font-size: clamp(1.3rem, 5vw, 2.3rem);
   }
+
+  .absolute-class {
+    display: contents;
+    position: absolute;
+    justify-content: right;
+    text-align: right;
+    color: #000000;
+  }
+
   #info-icon-work01 {
+    position: relative;
+    z-index: 2;
     padding: 0;
     display: flex;
     justify-content: right;
@@ -670,6 +672,7 @@ h2 {
     cursor: pointer;
   }
   #icon-work01 {
+    z-index: 2;
     padding: 0rem;
     margin: auto;
     text-align: center;
@@ -695,6 +698,38 @@ h2 {
     justify-content: center;
     min-width: auto;
     text-align: center;
+  }
+
+  /* .overlay-hidden {
+    display: none;
+  } */
+
+  .my-work-info-overlay {
+    /* display: inline-block; */
+    /* z-index: 1; */
+    position: absolute;
+    /* top: clamp(18%, 20vw, 20%); */
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+
+    background-color: rgba(220, 220, 220, 0.838);
+    backdrop-filter: blur(7px);
+  }
+
+  .overlay-paragraph {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    /* width: 100%;
+    height: 100%; */
+    top: 17%;
+    padding: 2rem;
   }
 
   #form {
@@ -1032,18 +1067,9 @@ h2 {
     padding-right: clamp(1rem, 23vw, 35rem);
   }
 
-  /* .my-work-div {
-    text-align: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    max-width: 15rem;
-    margin: 0rem;
-    padding: 0rem;
-  } */
   .my-rock-paper-scissors-div {
     justify-content: center;
+    position: relative;
     /* text-align: center; */
     border: 1px solid rgb(255, 255, 255);
     /* margin-top: 0.5rem; */
@@ -1060,7 +1086,18 @@ h2 {
     display: flex;
     font-size: clamp(1.3rem, 5vw, 2.3rem);
   }
+
+  .absolute-class {
+    display: contents;
+    position: absolute;
+    justify-content: right;
+    text-align: right;
+    color: #000000;
+  }
+
   #info-icon-work01 {
+    position: relative;
+    z-index: 2;
     padding: 0;
     display: flex;
     justify-content: right;
@@ -1069,6 +1106,7 @@ h2 {
     cursor: pointer;
   }
   #icon-work01 {
+    z-index: 2;
     padding: 0rem;
     margin: auto;
     text-align: center;
@@ -1094,6 +1132,38 @@ h2 {
     justify-content: center;
     min-width: auto;
     text-align: center;
+  }
+
+  .overlay-hidden {
+    display: none;
+  }
+
+  .my-work-info-overlay {
+    /* display: inline-block; */
+    /* z-index: 1; */
+    position: absolute;
+    /* top: clamp(18%, 20vw, 20%); */
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+
+    background-color: rgba(220, 220, 220, 0.838);
+    backdrop-filter: blur(7px);
+  }
+
+  .overlay-paragraph {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    /* width: 100%;
+    height: 100%; */
+    top: 17%;
+    padding: 2rem;
   }
 
   #form {
@@ -1395,18 +1465,9 @@ h2 {
     padding-right: clamp(1rem, 23vw, 35rem);
   }
 
-  /* .my-work-div {
-    text-align: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    max-width: 15rem;
-    margin: 0rem;
-    padding: 0rem;
-  } */
   .my-rock-paper-scissors-div {
     justify-content: center;
+    position: relative;
     /* text-align: center; */
     border: 1px solid rgb(255, 255, 255);
     /* margin-top: 0.5rem; */
@@ -1423,7 +1484,18 @@ h2 {
     display: flex;
     font-size: clamp(1.3rem, 5vw, 2.3rem);
   }
+
+  .absolute-class {
+    display: contents;
+    position: absolute;
+    justify-content: right;
+    text-align: right;
+    color: #000000;
+  }
+
   #info-icon-work01 {
+    position: relative;
+    z-index: 2;
     padding: 0;
     display: flex;
     justify-content: right;
@@ -1432,6 +1504,7 @@ h2 {
     cursor: pointer;
   }
   #icon-work01 {
+    z-index: 2;
     padding: 0rem;
     margin: auto;
     text-align: center;
@@ -1457,6 +1530,38 @@ h2 {
     justify-content: center;
     min-width: auto;
     text-align: center;
+  }
+
+  .overlay-hidden {
+    display: none;
+  }
+
+  .my-work-info-overlay {
+    /* display: inline-block; */
+    /* z-index: 1; */
+    position: absolute;
+    /* top: clamp(18%, 20vw, 20%); */
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+
+    background-color: rgba(220, 220, 220, 0.838);
+    backdrop-filter: blur(7px);
+  }
+
+  .overlay-paragraph {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    /* width: 100%;
+    height: 100%; */
+    top: 17%;
+    padding: 2rem;
   }
 
   #form {
@@ -1797,18 +1902,9 @@ h2 {
     padding-right: clamp(1rem, 23vw, 35rem); */
   }
 
-  /* .my-work-div {
-    text-align: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    max-width: 15rem;
-    margin: 0rem;
-    padding: 0rem;
-  } */
   .my-rock-paper-scissors-div {
     justify-content: center;
+    position: relative;
     /* text-align: center; */
     border: 1px solid rgb(255, 255, 255);
     /* margin-top: 0.5rem; */
@@ -1825,7 +1921,18 @@ h2 {
     display: flex;
     font-size: clamp(1.3rem, 5vw, 2.3rem);
   }
+
+  .absolute-class {
+    display: contents;
+    position: absolute;
+    justify-content: right;
+    text-align: right;
+    color: #000000;
+  }
+
   #info-icon-work01 {
+    position: relative;
+    z-index: 2;
     padding: 0;
     display: flex;
     justify-content: right;
@@ -1834,6 +1941,7 @@ h2 {
     cursor: pointer;
   }
   #icon-work01 {
+    z-index: 2;
     padding: 0rem;
     margin: auto;
     text-align: center;
@@ -1859,6 +1967,38 @@ h2 {
     justify-content: center;
     min-width: auto;
     text-align: center;
+  }
+
+  .overlay-hidden {
+    display: none;
+  }
+
+  .my-work-info-overlay {
+    /* display: inline-block; */
+    /* z-index: 1; */
+    position: absolute;
+    /* top: clamp(18%, 20vw, 20%); */
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+
+    background-color: rgba(220, 220, 220, 0.838);
+    backdrop-filter: blur(7px);
+  }
+
+  .overlay-paragraph {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    /* width: 100%;
+    height: 100%; */
+    top: 17%;
+    padding: 2rem;
   }
 
   #form {

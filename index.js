@@ -29,6 +29,7 @@ function scrollFunction() {
   }
 }
 
+// *TODO Loop over all "i" icons
 // !Info overlay for my projects
 
 const infoIcon = document.getElementById("info-icon-work01");
