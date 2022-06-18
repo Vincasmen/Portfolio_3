@@ -29,17 +29,20 @@ function scrollFunction() {
   }
 }
 
-// *TODO Loop over all "i" icons
+// *TODO Fix toggle for color change of the "i" icon
+// *TODO(that toggle actually works but for the whole <i></i> div)
 // !Info overlay for my projects
 
-const infoIcon = document.getElementById("info-icon-work01");
-const infoOverlay = document.getElementById("my-work-info-overlay");
+const infoIcon = document.querySelectorAll(".fas.fa-info.fa-2x");
+const infoOverlay = document.querySelectorAll("#my-work-info-overlay");
 
-infoOverlay.classList.add("overlay-hidden");
-infoIcon.classList.remove("absolute-class");
+// infoIcon = classList.remove("absolute-class");
+console.log(infoIcon);
 
-infoIcon.addEventListener("click", function () {
-  console.log("clicked");
-  infoOverlay.classList.toggle("overlay-hidden");
-  infoIcon.classList.toggle("absolute-class");
-});
+for (let i = 0; i < infoIcon.length; i++) {
+  infoIcon[i].addEventListener("click", function () {
+    infoIcon[i].classList.toggle("absolute-class");
+    infoOverlay[i].classList.toggle("overlay-hidden");
+  });
+  console.log(infoIcon[i]);
+}

@@ -224,14 +224,16 @@ h2 {
   }
 
   .absolute-class {
+    color: #000000;
+    font-size: xx-large;
     display: contents;
     position: absolute;
     justify-content: right;
     text-align: right;
-    color: #000000;
   }
 
   #info-icon-work01 {
+    color: rgb(255, 255, 255);
     position: relative;
     z-index: 2;
     padding: 0;
@@ -647,6 +649,7 @@ h2 {
   }
 
   .my-work-heading-div {
+    z-index: 1;
     margin: auto;
     padding: 0rem;
   }
@@ -663,6 +666,8 @@ h2 {
   }
 
   .absolute-class {
+    color: #000000;
+    font-size: xx-large;
     display: contents;
     position: absolute;
     justify-content: right;
@@ -671,6 +676,7 @@ h2 {
   }
 
   #info-icon-work01 {
+    color: white;
     position: relative;
     z-index: 2;
     padding: 0;
@@ -1094,6 +1100,7 @@ h2 {
   }
 
   .my-work-heading-div {
+    z-index: 1;
     margin: auto;
     padding: 0rem;
   }
@@ -1110,6 +1117,8 @@ h2 {
   }
 
   .absolute-class {
+    color: #000000;
+    font-size: xx-large;
     display: contents;
     position: absolute;
     justify-content: right;
@@ -1118,6 +1127,7 @@ h2 {
   }
 
   #info-icon-work01 {
+    color: white;
     position: relative;
     z-index: 2;
     padding: 0;
@@ -1127,6 +1137,7 @@ h2 {
     margin-right: -60px; */
     cursor: pointer;
   }
+
   #icon-work01 {
     z-index: 2;
     padding: 0rem;
@@ -1515,6 +1526,8 @@ h2 {
   }
 
   .absolute-class {
+    color: #000000;
+    font-size: xx-large;
     display: contents;
     position: absolute;
     justify-content: right;
@@ -1523,6 +1536,7 @@ h2 {
   }
 
   #info-icon-work01 {
+    color: white;
     position: relative;
     z-index: 2;
     padding: 0;
@@ -1959,14 +1973,16 @@ h2 {
   }
 
   .absolute-class {
+    color: #000000;
+    font-size: xx-large;
     display: contents;
     position: absolute;
     justify-content: right;
     text-align: right;
-    color: #000000;
   }
 
   #info-icon-work01 {
+    color: rgb(255, 255, 255);
     position: relative;
     z-index: 2;
     padding: 0;
@@ -1976,6 +1992,7 @@ h2 {
     margin-right: -60px; */
     cursor: pointer;
   }
+
   #icon-work01 {
     z-index: 2;
     padding: 0rem;
