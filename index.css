@@ -168,9 +168,6 @@ h2 {
   } */
 
   .dott-icon-div {
-    /* display: flex; */
-    /* float: right; */
-    /* z-index: 99; */
     padding: 0rem;
     margin: 0rem;
     justify-content: center;
@@ -179,15 +176,11 @@ h2 {
   #dott-icon {
     text-align: center;
     padding-top: 10px;
-    /* top: 50%;
-  bottom: 50%; */
-    /* display: flex; */
+
     font-size: clamp(1rem, 5vw, 2rem);
     cursor: pointer;
-    /* padding: 0rem;
-  margin: 0rem; */
+
     justify-content: center;
-    /* z-index: 99; */
   }
 
   .my-work-div {
@@ -215,7 +208,11 @@ h2 {
     border-top: 1.5px solid rgb(255, 255, 255);
   }
   .my-work-heading {
+    position: relative;
+    text-align: center;
+    justify-content: center;
     padding-top: 1rem;
+    padding-bottom: 0.4rem;
     display: flex;
     font-size: clamp(1.3rem, 5vw, 2.3rem);
   }
@@ -599,27 +596,20 @@ h2 {
     padding-right: clamp(20rem, 40vw, 37rem);
     padding-left: clamp(1rem, 50vw, 5rem);
     word-wrap: break-word;
-    /* border-right: solid 1px white;
-    border-bottom: solid 1px white; */
   }
 
   .introduction-paragraph-div {
     padding-left: clamp(20rem, 40vw, 37rem);
     padding-right: clamp(1rem, 50vw, 5rem);
-    /* border-left: solid 1px white; */
-    /* border-top: solid 1px white; */
   }
   .introduction-paragraph {
     display: block;
     word-wrap: break-word;
     text-align: right;
     font-size: clamp(2.5rem, 4vw, 15rem);
-    /* width: clamp(5rem, 5vw, 20rem); */
-    /* padding-left: clamp(5rem, 10vw, 10rem); */
+
     padding: 0rem;
     margin: 0rem;
-    /* border-left: solid 1px white;
-    border-top: solid 1px white; */
   }
   .my-work-div {
     position: relative;
@@ -629,8 +619,9 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
-    padding-left: clamp(1rem, 20vw, 35rem);
-    padding-right: clamp(1rem, 20vw, 35rem);
+    padding: 0rem 8rem 0rem 8rem;
+    /* padding-left: clamp(1rem, 20vw, 35rem);
+    padding-right: clamp(1rem, 20vw, 35rem); */
   }
 
   .my-rock-paper-scissors-div {
@@ -647,10 +638,22 @@ h2 {
   .break-after-hero {
     border-top: 1.5px solid rgb(255, 255, 255);
   }
+
+  .my-work-heading-div {
+    margin: auto;
+    padding: 0rem;
+  }
+
   .my-work-heading {
+    position: relative;
+    text-align: center;
+    justify-content: center;
     padding-top: 1rem;
+    padding-bottom: 0.4rem;
+    /* width: clamp(25rem, 30vw, 55rem); */
+    /* width: 21rem; */
     display: flex;
-    font-size: clamp(1.3rem, 5vw, 2.3rem);
+    font-size: clamp(0.5rem, 4.5vw, 1.5rem);
   }
 
   .absolute-class {
@@ -692,6 +695,7 @@ h2 {
   }
 
   .card-div {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     padding: 0rem;
@@ -700,9 +704,9 @@ h2 {
     text-align: center;
   }
 
-  /* .overlay-hidden {
+  .overlay-hidden {
     display: none;
-  } */
+  }
 
   .my-work-info-overlay {
     /* display: inline-block; */
@@ -1082,9 +1086,14 @@ h2 {
     border-top: 1.5px solid rgb(255, 255, 255);
   }
   .my-work-heading {
+    position: relative;
+    text-align: center;
+    justify-content: center;
     padding-top: 1rem;
+    padding-bottom: 0.4rem;
+    width: 25rem;
     display: flex;
-    font-size: clamp(1.3rem, 5vw, 2.3rem);
+    font-size: clamp(1rem, 5vw, 1.5rem);
   }
 
   .absolute-class {
@@ -1126,6 +1135,7 @@ h2 {
   }
 
   .card-div {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     padding: 0rem;
@@ -1480,9 +1490,14 @@ h2 {
     border-top: 1.5px solid rgb(255, 255, 255);
   }
   .my-work-heading {
+    position: relative;
+    text-align: center;
+    justify-content: center;
     padding-top: 1rem;
+    padding-bottom: 0.4rem;
+    width: 25rem;
     display: flex;
-    font-size: clamp(1.3rem, 5vw, 2.3rem);
+    font-size: clamp(1rem, 2vw, 2.5rem);
   }
 
   .absolute-class {
@@ -1524,6 +1539,7 @@ h2 {
   }
 
   .card-div {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     padding: 0rem;
@@ -1917,9 +1933,14 @@ h2 {
     border-top: 1.5px solid rgb(255, 255, 255);
   }
   .my-work-heading {
+    position: relative;
+    text-align: center;
+    justify-content: center;
     padding-top: 1rem;
+    padding-bottom: 0.4rem;
+    width: 25rem;
     display: flex;
-    font-size: clamp(1.3rem, 5vw, 2.3rem);
+    font-size: clamp(1.3rem, 5vw, 2rem);
   }
 
   .absolute-class {
@@ -1961,6 +1982,7 @@ h2 {
   }
 
   .card-div {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     padding: 0rem;
