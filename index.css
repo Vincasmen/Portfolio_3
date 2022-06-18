@@ -13,6 +13,8 @@ a {
 }
 
 h2 {
+  position: absolute;
+  z-index: 99;
   display: inline;
   grid-template-columns: 0.1fr;
   padding: 0;
@@ -90,6 +92,7 @@ h2 {
   }
 
   .sticky {
+    z-index: 99;
     position: fixed;
     top: 0;
     width: 95.3%;
@@ -184,6 +187,7 @@ h2 {
   }
 
   .my-work-div {
+    z-index: 1;
     position: relative;
     text-align: center;
     justify-content: center;
@@ -191,6 +195,8 @@ h2 {
     grid-template-columns: 1fr;
     margin: 0rem;
     padding: 0rem;
+    padding-left: clamp(1rem, 10vw, 25rem);
+    padding-right: clamp(1rem, 10vw, 25rem);
   }
 
   .my-rock-paper-scissors-div {
@@ -271,7 +277,7 @@ h2 {
 
   .my-work-info-overlay {
     /* display: inline-block; */
-    /* z-index: 1; */
+    z-index: 1;
     position: absolute;
     /* top: clamp(18%, 20vw, 20%); */
     top: 0%;
@@ -620,8 +626,8 @@ h2 {
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     padding: 0rem 8rem 0rem 8rem;
-    /* padding-left: clamp(1rem, 20vw, 35rem);
-    padding-right: clamp(1rem, 20vw, 35rem); */
+    padding-left: clamp(2rem, 17vw, 35rem);
+    padding-right: clamp(2rem, 17vw, 35rem);
   }
 
   .my-rock-paper-scissors-div {
@@ -650,8 +656,7 @@ h2 {
     justify-content: center;
     padding-top: 1rem;
     padding-bottom: 0.4rem;
-    /* width: clamp(25rem, 30vw, 55rem); */
-    /* width: 21rem; */
+    width: 21rem;
     display: flex;
     font-size: clamp(0.5rem, 4.5vw, 1.5rem);
   }
@@ -1085,6 +1090,12 @@ h2 {
   .break-after-hero {
     border-top: 1.5px solid rgb(255, 255, 255);
   }
+
+  .my-work-heading-div {
+    margin: auto;
+    padding: 0rem;
+  }
+
   .my-work-heading {
     position: relative;
     text-align: center;
