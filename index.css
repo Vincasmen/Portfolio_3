@@ -95,7 +95,7 @@ h2 {
     z-index: 99;
     position: fixed;
     top: 0;
-    width: 95.3%;
+    width: 96.7%;
     color: #ffffff;
     /* padding-top: 10px; */
     backdrop-filter: blur(6px);
@@ -494,6 +494,7 @@ h2 {
   }
 
   .sticky {
+    z-index: 99;
     position: fixed;
     top: 0;
     width: 98.2%;
@@ -934,6 +935,7 @@ h2 {
   }
 
   .sticky {
+    z-index: 99;
     position: fixed;
     top: 0;
     width: 98.3%;
@@ -1343,6 +1345,7 @@ h2 {
   }
 
   .sticky {
+    z-index: 99;
     position: fixed;
     top: 0;
     width: 98.6%;
@@ -1783,6 +1786,7 @@ h2 {
   }
 
   .sticky {
+    z-index: 99;
     position: fixed;
     top: 0;
     width: 98.7%;
