@@ -24,6 +24,7 @@ h2 {
 }
 .heading-name:hover {
   text-shadow: red -2px 0, cyan 2px 0;
+  transition: 0.2s ease-in-out;
 }
 
 .heading-name-div {
@@ -156,14 +157,17 @@ h2 {
   .li-about:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
   .li-projects:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
   .li-contact:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
 
   /* .hidden-dott-icon {
@@ -414,6 +418,7 @@ h2 {
     background-color: #000000;
     border-color: #ffffff;
     width: auto;
+    transition: 0.3s ease-in-out;
   }
 
   #button-form:hover {
@@ -422,7 +427,7 @@ h2 {
     font-weight: 500;
     font-size: xx-large;
     border-color: #ffffff;
-    transition: 0.7s;
+    transition: 0.3s ease-in-out;
   }
   @media (prefers-reduced-motion: reduce) {
     #button-form {
@@ -460,6 +465,7 @@ h2 {
     color: white;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
   }
 
   .fab:hover {
@@ -563,14 +569,17 @@ h2 {
   .li-about:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
   .li-projects:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
   .li-contact:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
 
   .hidden-dott-icon {
@@ -861,7 +870,7 @@ h2 {
     color: rgb(255, 255, 255);
     background-color: #000000;
     border-color: #ffffff;
-    /* width: auto; */
+    transition: 0.3s ease-in-out;
   }
 
   #button-form:hover {
@@ -870,7 +879,7 @@ h2 {
     font-weight: 500;
     font-size: xx-large;
     border-color: #ffffff;
-    transition: 0.7s;
+    transition: 0.3s ease-in-out;
   }
   @media (prefers-reduced-motion: reduce) {
     #button-form {
@@ -905,6 +914,7 @@ h2 {
     color: white;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
   }
 
   .fab:hover {
@@ -1008,14 +1018,17 @@ h2 {
   .li-about:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
   .li-projects:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
   .li-contact:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
 
   .hidden-dott-icon {
@@ -1313,7 +1326,7 @@ h2 {
     color: rgb(255, 255, 255);
     background-color: #000000;
     border-color: #ffffff;
-    /* width: auto; */
+    transition: 0.3s ease-in-out;
   }
 
   #button-form:hover {
@@ -1322,7 +1335,7 @@ h2 {
     font-weight: 500;
     font-size: xx-large;
     border-color: #ffffff;
-    transition: 0.7s;
+    transition: 0.3s ease-in-out;
   }
   @media (prefers-reduced-motion: reduce) {
     #button-form {
@@ -1423,14 +1436,17 @@ h2 {
   .li-about:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
   .li-projects:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
   .li-contact:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
 
   .hidden-dott-icon {
@@ -1721,7 +1737,7 @@ h2 {
     color: rgb(255, 255, 255);
     background-color: #000000;
     border-color: #ffffff;
-    /* width: auto; */
+    transition: 0.3s ease-in-out;
   }
 
   #button-form:hover {
@@ -1730,7 +1746,7 @@ h2 {
     font-weight: 500;
     font-size: xx-large;
     border-color: #ffffff;
-    transition: 0.7s;
+    transition: 0.3s ease-in-out;
   }
   @media (prefers-reduced-motion: reduce) {
     #button-form {
@@ -1764,6 +1780,7 @@ h2 {
     color: white;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
   }
 
   .fab:hover {
@@ -1867,14 +1884,17 @@ h2 {
   .li-about:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
   .li-projects:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
   .li-contact:hover {
     /* color: rgb(156, 156, 156); */
     text-shadow: red -2px 0, cyan 2px 0;
+    transition: 0.2s ease-in-out;
   }
 
   .hidden-dott-icon {
@@ -2169,6 +2189,7 @@ h2 {
     background-color: #000000;
     border-color: #ffffff;
     /* width: auto; */
+    transition: 0.3s ease-in-out;
   }
 
   #button-form:hover {
@@ -2177,7 +2198,7 @@ h2 {
     font-weight: 500;
     font-size: x-large;
     border-color: #ffffff;
-    transition: 0.7s;
+    transition: 0.3s ease-in-out;
   }
   @media (prefers-reduced-motion: reduce) {
     #button-form {
