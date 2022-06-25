@@ -24,7 +24,8 @@ h2 {
 }
 .heading-name:hover {
   text-shadow: red -2px 0, cyan 2px 0;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
+  transition: ease-out0.3;
 }
 
 .heading-name-div {
