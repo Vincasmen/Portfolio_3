@@ -26,6 +26,8 @@ h2 {
   margin: 0;
   overflow: hidden;
   cursor: pointer;
+  color: rgb(186, 186, 186);
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 .heading-name:hover {
   text-shadow: red -2px 0, cyan 2px 0;
@@ -33,6 +35,7 @@ h2 {
 }
 
 .heading-name-div {
+  font-weight: bolder;
   display: block;
   /* position: relative; */
   text-align: left;
