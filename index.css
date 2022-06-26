@@ -1883,7 +1883,6 @@ a {
   }
 
   .ul {
-    /* display: inline; */
     background-color: #007bff00;
     font-size: clamp(0.5rem, 2vw, 2rem);
     font-weight: bold;
