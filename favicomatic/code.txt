@@ -2,6 +2,6 @@
 <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://portfolio-vincourek.netlify.app/apple-touch-icon-152x152.png" />
 <link rel="icon" type="image/png" href="https://portfolio-vincourek.netlify.app/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="https://portfolio-vincourek.netlify.app/favicon-16x16.png" sizes="16x16" />
-<meta name="application-name" content="Portfolio"/>
+<meta name="application-name" content="&nbsp;"/>
 <meta name="msapplication-TileColor" content="#FFFFFF" />
 <meta name="msapplication-TileImage" content="https://portfolio-vincourek.netlify.app/mstile-144x144.png" />
