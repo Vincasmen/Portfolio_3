@@ -7,12 +7,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
 h2 {
+  position: absolute;
+  z-index: 99;
+  display: inline;
+  grid-template-columns: 0.1fr;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.heading-name {
   position: absolute;
   z-index: 99;
   display: inline;
@@ -24,8 +29,7 @@ h2 {
 }
 .heading-name:hover {
   text-shadow: red -2px 0, cyan 2px 0;
-  transition: 0.3s ease-in-out;
-  transition: ease-out0.3;
+  transition: 0.5s ease-in-out;
 }
 
 .heading-name-div {
@@ -41,16 +45,16 @@ h2 {
   overflow: hidden;
 }
 
-/* .main-header {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 0.9fr 0.1fr;
-  grid-template-rows: 1fr;
-  gap: 0px;
-  margin-top: 0rem;
-  padding-top: 0rem;
+.main-header {
+  transition: ease-in-out 0.5s;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 
 .sticky {
   position: fixed;
   top: 0;
@@ -143,6 +147,7 @@ h2 {
     padding: 0rem;
     margin: 0rem;
     line-height: 30px;
+    transition: ease-in-out 0.5s;
   }
 
   .li-about {
@@ -202,6 +207,7 @@ h2 {
     padding: 0rem;
     padding-left: clamp(1rem, 10vw, 25rem);
     padding-right: clamp(1rem, 10vw, 25rem);
+    transition: ease-in-out 0.5s;
   }
 
   .my-rock-paper-scissors-div {
@@ -315,7 +321,6 @@ h2 {
   #form {
     display: block;
     margin: 2rem 0rem 1rem 0rem;
-
     font-size: clamp(1rem, 5vw, 1.2rem);
     font-weight: 400;
     line-height: 1.5;
