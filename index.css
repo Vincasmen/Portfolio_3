@@ -7,6 +7,20 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(186, 186, 186);
+}
+
 h2 {
   position: absolute;
   z-index: 99;
@@ -2067,7 +2081,7 @@ a {
     width: 100%;
     margin: 0rem;
     padding: 0rem;
-
+    transition: 0.5s ease-in-out;
     background-color: rgba(220, 220, 220, 0.838);
     backdrop-filter: blur(7px);
   }
@@ -2082,6 +2096,7 @@ a {
     height: 100%; */
     top: 17%;
     padding: 2rem;
+    transition: 0.5s ease-in-out;
   }
 
   #form {
@@ -2185,10 +2200,10 @@ a {
     cursor: pointer;
     background-color: transparent;
     border: 1px solid transparent;
-    padding-left: clamp(6rem, 5vw, 10rem);
-    padding-right: clamp(6rem, 5vw, 10rem);
-    padding-top: clamp(0.3rem, 5vw, 0.8rem);
-    padding-bottom: clamp(0.3rem, 5vw, 0.8rem);
+    margin-left: clamp(6rem, 5vw, 10rem);
+    margin-right: clamp(6rem, 5vw, 10rem);
+    margin-top: clamp(0.3rem, 5vw, 0.8rem);
+    margin-bottom: clamp(0.3rem, 5vw, 0.8rem);
     font-size: clamp(1.2rem, 5vw, 1.4rem);
     line-height: 1.5;
     border-radius: 0.25rem;
