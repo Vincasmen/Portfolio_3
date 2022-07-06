@@ -33,16 +33,15 @@ function scrollFunction() {
 // *TODO(that toggle actually works but for the whole <i></i> div)
 // !Info overlay for my projects
 
-const infoIcon = document.querySelectorAll(".fas.fa-info.fa-2x");
+const infoIcon = document.querySelectorAll("#info-icon-work01");
 const infoOverlay = document.querySelectorAll("#my-work-info-overlay");
 
-// infoIcon = classList.remove("absolute-class");
 console.log(infoIcon);
 
 for (let i = 0; i < infoIcon.length; i++) {
   infoIcon[i].addEventListener("click", function () {
     infoIcon[i].classList.toggle("absolute-class");
+    infoIcon[i].classList.toggle("info-icon-class");
     infoOverlay[i].classList.toggle("overlay-hidden");
   });
-  console.log(infoIcon[i]);
 }

@@ -254,22 +254,29 @@ a {
 
   .absolute-class {
     color: #000000;
-    font-size: xx-large;
-    display: contents;
-    position: absolute;
+    display: inline;
+    position: relative;
+    display: flex;
     justify-content: right;
+    align-items: flex-end;
+    justify-items: right;
     text-align: right;
+    z-index: 50;
   }
 
   #info-icon-work01 {
+    display: flex;
+  }
+
+  .info-icon-class {
     color: rgb(255, 255, 255);
     position: relative;
-    z-index: 2;
+    z-index: 50;
     padding: 0;
     display: flex;
     justify-content: right;
-    /* margin-top: -60px;
-    margin-right: -60px; */
+    align-items: flex-end;
+    justify-items: right;
     cursor: pointer;
   }
   #icon-work01 {
@@ -700,23 +707,29 @@ a {
 
   .absolute-class {
     color: #000000;
-    font-size: xx-large;
-    display: contents;
-    position: absolute;
+    display: inline;
+    position: relative;
+    display: flex;
     justify-content: right;
+    align-items: flex-end;
+    justify-items: right;
     text-align: right;
-    color: #000000;
+    z-index: 50;
   }
 
   #info-icon-work01 {
-    color: white;
+    display: flex;
+  }
+
+  .info-icon-class {
+    color: rgb(255, 255, 255);
     position: relative;
-    z-index: 2;
+    z-index: 50;
     padding: 0;
     display: flex;
     justify-content: right;
-    /* margin-top: -60px;
-    margin-right: -60px; */
+    align-items: flex-end;
+    justify-items: right;
     cursor: pointer;
   }
   #icon-work01 {
@@ -1155,23 +1168,29 @@ a {
 
   .absolute-class {
     color: #000000;
-    font-size: xx-large;
-    display: contents;
-    position: absolute;
+    display: inline;
+    position: relative;
+    display: flex;
     justify-content: right;
+    align-items: flex-end;
+    justify-items: right;
     text-align: right;
-    color: #000000;
+    z-index: 50;
   }
 
   #info-icon-work01 {
-    color: white;
+    display: flex;
+  }
+
+  .info-icon-class {
+    color: rgb(255, 255, 255);
     position: relative;
-    z-index: 2;
+    z-index: 50;
     padding: 0;
     display: flex;
     justify-content: right;
-    /* margin-top: -60px;
-    margin-right: -60px; */
+    align-items: flex-end;
+    justify-items: right;
     cursor: pointer;
   }
 
@@ -1567,23 +1586,29 @@ a {
 
   .absolute-class {
     color: #000000;
-    font-size: xx-large;
-    display: contents;
-    position: absolute;
+    display: inline;
+    position: relative;
+    display: flex;
     justify-content: right;
+    align-items: flex-end;
+    justify-items: right;
     text-align: right;
-    color: #000000;
+    z-index: 50;
   }
 
   #info-icon-work01 {
-    color: white;
+    display: flex;
+  }
+
+  .info-icon-class {
+    color: rgb(255, 255, 255);
     position: relative;
-    z-index: 2;
+    z-index: 50;
     padding: 0;
     display: flex;
     justify-content: right;
-    /* margin-top: -60px;
-    margin-right: -60px; */
+    align-items: flex-end;
+    justify-items: right;
     cursor: pointer;
   }
   #icon-work01 {
@@ -2017,22 +2042,29 @@ a {
 
   .absolute-class {
     color: #000000;
-    font-size: xx-large;
-    display: contents;
-    position: absolute;
+    display: inline;
+    position: relative;
+    display: flex;
     justify-content: right;
+    align-items: flex-end;
+    justify-items: right;
     text-align: right;
+    z-index: 50;
   }
 
   #info-icon-work01 {
+    display: flex;
+  }
+
+  .info-icon-class {
     color: rgb(255, 255, 255);
     position: relative;
-    z-index: 2;
+    z-index: 50;
     padding: 0;
     display: flex;
     justify-content: right;
-    /* margin-top: -60px;
-    margin-right: -60px; */
+    align-items: flex-end;
+    justify-items: right;
     cursor: pointer;
   }
 
@@ -2071,10 +2103,7 @@ a {
   }
 
   .my-work-info-overlay {
-    /* display: inline-block; */
-    /* z-index: 1; */
     position: absolute;
-    /* top: clamp(18%, 20vw, 20%); */
     top: 0%;
     right: 0%;
     height: 100%;
@@ -2084,6 +2113,7 @@ a {
     transition: 0.5s ease-in-out;
     background-color: rgba(220, 220, 220, 0.838);
     backdrop-filter: blur(7px);
+    z-index: 1;
   }
 
   .overlay-paragraph {
