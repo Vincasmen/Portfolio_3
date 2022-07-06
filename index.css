@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: white;
   margin: 0.7rem;
@@ -477,7 +481,7 @@ a {
   .footer-anchor {
     font-size: clamp(1rem, 1.3vw, 1.5rem);
 
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
   }
@@ -503,8 +507,37 @@ a {
     text-shadow: red -2px 0, cyan 2px 0;
   }
 
-  .footer-heart {
+  .footer {
     text-shadow: red -2px 0, cyan 2px 0;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0);
+    height: -10px;
+    width: -10px;
+    transform: scale(1);
+    animation: pulse-heart 2s infinite;
+  }
+  .footer.heart {
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 0 0 rgb(255, 0, 0);
+    animation: pulse-heart 2s infinite;
+  }
+
+  @keyframes pulse-heart {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
   }
 }
 
@@ -512,7 +545,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .main-header {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     display: grid;
     /* text-align: center; */
     grid-template-columns: 1fr 1fr;
@@ -1455,7 +1488,7 @@ a {
 
   .ul {
     /* display: inline; */
-    background-color: #007bff00;
+    background-color: #00000000;
     font-size: clamp(0.5rem, 2vw, 2rem);
     font-weight: bold;
     word-spacing: 1px;
@@ -1872,8 +1905,6 @@ a {
     width: 98.7%;
     backdrop-filter: blur(6px);
     border-bottom: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
   }
 
   .padding {

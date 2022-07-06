@@ -29,10 +29,6 @@ function scrollFunction() {
   }
 }
 
-// *TODO Fix toggle for color change of the "i" icon
-// *TODO(that toggle actually works but for the whole <i></i> div)
-// !Info overlay for my projects
-
 const infoIcon = document.querySelectorAll("#info-icon-work01");
 const infoOverlay = document.querySelectorAll("#my-work-info-overlay");
 
