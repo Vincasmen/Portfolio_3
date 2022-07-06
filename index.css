@@ -266,6 +266,7 @@ a {
     justify-items: right;
     text-align: right;
     z-index: 50;
+    cursor: pointer;
   }
 
   #info-icon-work01 {
@@ -748,6 +749,7 @@ a {
     justify-items: right;
     text-align: right;
     z-index: 50;
+    cursor: pointer;
   }
 
   #info-icon-work01 {
@@ -991,7 +993,7 @@ a {
     text-shadow: red -2px 0, cyan 2px 0;
   }
 
-  .footer-heart {
+  .heart {
     text-shadow: red -2px 0, cyan 2px 0;
   }
 }
@@ -1209,6 +1211,7 @@ a {
     justify-items: right;
     text-align: right;
     z-index: 50;
+    cursor: pointer;
   }
 
   #info-icon-work01 {
@@ -1627,6 +1630,7 @@ a {
     justify-items: right;
     text-align: right;
     z-index: 50;
+    cursor: pointer;
   }
 
   #info-icon-work01 {
@@ -1869,7 +1873,7 @@ a {
     text-shadow: red -2px 0, cyan 2px 0;
   }
 
-  .footer-heart {
+  .heart {
     text-shadow: red -2px 0, cyan 2px 0;
   }
 }
@@ -2081,6 +2085,7 @@ a {
     justify-items: right;
     text-align: right;
     z-index: 50;
+    cursor: pointer;
   }
 
   #info-icon-work01 {
