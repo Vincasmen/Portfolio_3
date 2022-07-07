@@ -34,7 +34,7 @@ h2 {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .heading-name {
   position: absolute;
