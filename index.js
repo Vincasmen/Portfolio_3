@@ -1,43 +1,21 @@
 "use strict";
 
-//  !Dott menu and list
+const menuIcon = document.querySelector(".menu-icon");
+const menuList = document.querySelector("nav");
+const hamburgerIcon = document.querySelector(".fa-bars");
 
-const dottBtn = document.getElementById("dott-icon");
-const headerList = document.getElementById("ul-id");
-
-dottBtn.addEventListener("click", function () {
-  headerList.classList.toggle("hidden-ul");
-  console.log("BtnClicked");
+menuIcon.addEventListener("click", () => {
+  hamburgerIcon.classList.toggle("fa-times");
+  menuList.style.display =
+    menuList.style.display === "block" ? "none" : "block";
 });
 
-//  !Sticky scroll nav bar
-
-const navBar = document.getElementById("nav-bar");
-const introDiv = document.getElementById("heading-introduction-div");
-window.onscroll = function () {
-  scrollFunction();
-};
-const sticky = navBar.offsetTop;
-
-function scrollFunction() {
-  if (window.pageYOffset >= sticky) {
-    navBar.classList.add("sticky");
-    introDiv.classList.add("padding");
+checkMediaQuery = () => {
+  if (window.innerWidth > 600) {
+    menuList.style.display = "block";
   } else {
-    navBar.classList.remove("sticky");
-    introDiv.classList.remove("padding");
+    menuList.style.display = "none";
   }
-}
+};
 
-const infoIcon = document.querySelectorAll("#info-icon-work01");
-const infoOverlay = document.querySelectorAll("#my-work-info-overlay");
-
-console.log(infoIcon);
-
-for (let i = 0; i < infoIcon.length; i++) {
-  infoIcon[i].addEventListener("click", function () {
-    infoIcon[i].classList.toggle("absolute-class");
-    infoIcon[i].classList.toggle("info-icon-class");
-    infoOverlay[i].classList.toggle("overlay-hidden");
-  });
-}
+window.addEventListener("resize", checkMediaQuery);
