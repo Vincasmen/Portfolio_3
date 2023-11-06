@@ -3,27 +3,38 @@
 const menuIcon = document.querySelector(".menu-icon");
 const menuList = document.querySelector("nav");
 const hamburgerIcon = document.querySelector(".fa-bars");
-// const header = document.querySelector(".header");
+const modalDiv = document.querySelector(".message-modal");
+const modalParagraph = document.createElement("p");
+const submitBtn = document.querySelector(".submit-btn");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const textArea = document.querySelector("#text-area");
 
-// header.addEventListener("click", () => {
-//   console.log("clicked");
-// });
+const divTimeOut = () => {
+  setTimeout(() => {
+    modalDiv.style.display = "none";
+    modalDiv.classList.add("text-blur-out");
+    modalDiv.classList.remove("div-focus-in");
+  }, 2000);
+};
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  modalDiv.classList.add("div-focus-in");
+  modalDiv.style.display = "block";
+  console.log("clicked");
+  nameInput.value = "";
+  emailInput.value = "";
+  textArea.value = "";
+
+  divTimeOut();
+});
 
 menuIcon.addEventListener("click", () => {
   hamburgerIcon.classList.toggle("fa-times");
   menuList.style.display =
     menuList.style.display === "block" ? "none" : "block";
 });
-
-// checkMediaQuery = () => {
-//   if (window.innerWidth > 600) {
-//     menuList.style.display = "block";
-//   } else {
-//     menuList.style.display = "none";
-//   }
-// };
-
-// window.addEventListener("resize", checkMediaQuery);
 
 let prevScrollPos = window.scrollY;
 

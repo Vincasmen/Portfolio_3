@@ -27,6 +27,7 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  scroll-behavior: smooth;
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -135,6 +136,10 @@ body {
 }
 
 /*  !------------ HEADER SECTION ----------------*/
+
+.snap {
+  scroll-snap-align: start;
+}
 
 header {
   position: fixed;
@@ -307,14 +312,15 @@ li a:hover {
 /*  !------------ FORM SECTION ----------------*/
 
 .form-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  height: 35rem;
+  height: 40rem;
   gap: 1rem;
   color: var(--main-font-color);
-  margin: 1rem;
+  margin: 3rem 0rem 0rem 0rem;
 }
 .form-heading {
   font-weight: bold;
@@ -357,6 +363,8 @@ li a:hover {
   border: 1px solid white;
   border-radius: 10px;
   padding: 1rem;
+  height: 5rem;
+  overflow-x: hidden;
 }
 .form-tag textarea:focus {
   border: 1px solid rgba(221, 75, 37);
@@ -371,6 +379,27 @@ li a:hover {
 }
 .submit-btn:hover {
   border: 1px solid rgba(221, 75, 37);
+}
+
+.message-modal {
+  display: none;
+  position: absolute;
+  /* margin: 0 auto; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: azure;
+}
+
+.modal-paragraph {
+  margin: 0 auto;
+  padding: 2rem;
+  color: #000000;
+  text-align: center;
 }
 
 /*  !------------ FOOTER SECTION ----------------*/

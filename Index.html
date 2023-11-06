@@ -67,14 +67,17 @@
     <!-- !--------HERO SECTION--------- -->
 
     <section id="home" class="section__hero">
-      <div id="heading-introduction-div" class="heading-introduction-div">
+      <div
+        id="heading-introduction-div"
+        class="heading-introduction-div tracking-in-expand"
+      >
         <h1 class="heading-introduction">
           Hi, I'm Jan, a
           <span class="introduction-span">front-end</span> developer.
         </h1>
       </div>
       <div class="introduction-paragraph-div">
-        <p class="introduction-paragraph">
+        <p class="introduction-paragraph text-focus-in">
           I'm a self-taught front-end developer, primarily focused on JavaScript
           and React. Feel free to browse through my portfolio, and if you're
           intrigued, don't hesitate to reach out.
@@ -303,6 +306,7 @@
       >
         <input
           class="form-control"
+          id="name"
           type="text"
           name="name"
           placeholder="Name"
@@ -312,6 +316,7 @@
 
         <input
           class="form-control"
+          id="email"
           type="email"
           name="email"
           placeholder="Email"
@@ -320,16 +325,21 @@
         />
 
         <textarea
+          id="text-area"
           class="message-container"
           name="message"
           placeholder="Your text"
-          cols="5"
+          cols="30"
+          rows="5"
           wrap="hard"
           onfocus="this.placeholder = ''"
           onblur="this.placeholder = 'Your text'"
         ></textarea>
 
         <button id="button-form" class="submit-btn" type="submit">Send</button>
+        <div class="message-modal">
+          <p class="modal-paragraph">Your message was succesfully sent.</p>
+        </div>
       </form>
     </section>
 
