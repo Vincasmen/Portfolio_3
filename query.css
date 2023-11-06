@@ -23,7 +23,7 @@
   .menu-icon {
     display: block;
     color: white;
-    font-size: 23px;
+    /* font-size: 30px; */
   }
 }
 
@@ -31,9 +31,16 @@
   .section__hero {
     justify-content: center;
   }
+  header nav {
+    display: block !important;
+  }
 }
 
 @media (min-width: 768px) {
+  .section__hero {
+    height: 100vh;
+  }
+
   .projects-info {
     padding-right: 2rem;
   }
@@ -46,6 +53,7 @@
   header {
     width: 66%;
     margin: 0 auto;
+    left: 15%;
   }
 
   .menu-icon {
@@ -90,6 +98,11 @@
   }
 }
 @media (min-width: 1166px) {
+  header {
+    width: 70%;
+    margin: 0 auto;
+  }
+
   .section__hero {
     margin: 0 auto;
   }
@@ -116,6 +129,8 @@
 @media (min-width: 1666px) {
   header {
     width: 55%;
+    margin: 0 auto;
+    right: 15rem;
   }
 
   .section__hero {
@@ -132,15 +147,13 @@
 }
 
 @media (min-width: 2560px) {
+  header {
+    width: 60%;
+    margin: 0 auto;
+    right: 20rem;
+  }
+
   .form-section {
     margin-top: 3rem;
-    /* border-left: 3px;
-    border-style: solid;
-    border-image: linear-gradient(to top, red, rgba(0, 0, 0, 0)) 1 20%;
-    border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 20%; */
   }
-  /* 
-  .footer-section {
-    border-top: solid 2px rgb(84, 84, 84);
-  } */
 }
