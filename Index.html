@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link rel="stylesheet" href="indexAlternative.css" />
+    <link rel="stylesheet" href="query.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/27b9d7ad5a.js"
       crossorigin="anonymous"
@@ -40,194 +47,305 @@
     />
   </head>
   <body>
-    <header id="nav-bar" class="main-header">
-      <div class="heading-name-div">
-        <a class="heading-name" href="#heading-introduction-div"> Vincourek </a>
-      </div>
-      <div class="ul-class-div">
-        <ul id="ul-id" class="ul hidden-ul">
-          <li class="li-about">
-            <a href="#heading-introduction-div"> About </a>
-          </li>
-          <li class="li-projects"><a href="#my-work"> Projects </a></li>
-          <li class="li-contact"><a href="#form">Contact </a></li>
+    <!-- !--------HEADER SECTION--------- -->
+
+    <header class="header">
+      <div class="logo"><a href="#">JV</a></div>
+      <nav>
+        <ul>
+          <li><a href="#home">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-      <div class="dott-icon-div hidden">
-        <i id="dott-icon" class="fas fa-ellipsis-v hidden-dott-icon"></i>
+      </nav>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+        <!-- <i class="fas fa-times"></i> -->
       </div>
     </header>
-    <hero>
-      <div id="heading-introduction-div" class="heading-introduction-div">
+
+    <!-- !--------HERO SECTION--------- -->
+
+    <section id="home" class="section__hero">
+      <div
+        id="heading-introduction-div"
+        class="heading-introduction-div tracking-in-expand"
+      >
         <h1 class="heading-introduction">
-          Hello, my name is Jan and I am a front-end developer.
+          Hi, I'm Jan, a
+          <span class="introduction-span">front-end</span> developer.
         </h1>
       </div>
       <div class="introduction-paragraph-div">
-        <p class="introduction-paragraph">
-          I am a self-taught front-end developer working mainly with Java Script
-          and React. Look thru my work and if interested, contact me.
+        <p class="introduction-paragraph text-focus-in">
+          I'm a self-taught front-end developer, primarily focused on JavaScript
+          and React. Feel free to browse through my portfolio, and if you're
+          intrigued, don't hesitate to reach out.
         </p>
       </div>
-    </hero>
+    </section>
     <div class="break-after-hero"></div>
 
-    <projects id="my-work" class="my-work-div">
-      <div class="card-div">
-        <div class="my-work-heading-div">
-          <h2 class="my-work-heading">Rock&Paper&Scissors</h2>
+    <!-- !--------PROJECTS SECTION--------- -->
+
+    <section id="projects" class="projects-section">
+      <div class="projects-section-heading-div">
+        <h1><i class="fas fa-laptop-code"></i> Projects</h1>
+      </div>
+
+      <!-- !--------Rock&Paper&Scissors--------- -->
+
+      <div class="card-div slide-in-right">
+        <div class="projects-img-div">
+          <a
+            href="https://rock-paper-scissors-vin.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img
+              class="projects-img"
+              src="/assets/rock_paper_scissors.png"
+              alt=""
+            />
+          </a>
         </div>
-        <div class="my-rock-paper-scissors-div">
-          <card class="my-work01">
-            <i
-              id="info-icon-work01"
-              class="fas fa-info fa-2x info-icon-class"
-            ></i>
+        <div class="projects-info-link-div">
+          <div class="projects-heading-div">
+            <h2 class="projects-heading">Rock&Paper&Scissors</h2>
+          </div>
+          <div class="projects-links-div">
             <a
-              class="my-work01-link"
+              class="projects-github"
+              href="https://github.com/Vincasmen/Rock-Paper-Scissors"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i
+            ></a>
+            <a
+              class="projects-netlify"
               href="https://rock-paper-scissors-vin.netlify.app/"
               target="_blank"
-              rel="noreferrer noopener"
             >
-              <i id="icon-work01" class="fas fa-gamepad fa-10x"></i>
+              <img
+                class="projects-netlify"
+                src="./assets/netlify-svgrepo-com.svg"
+                alt="netlify-image"
+              />
             </a>
-          </card>
-          <overlay
-            id="my-work-info-overlay"
-            class="my-work-info-overlay overlay-hidden"
-          >
-            <p class="overlay-paragraph">
-              This is a basic game created with HTML, CSS and Java Script.
+          </div>
+          <div class="projects-info">
+            <p class="projects-info-paragraph">
+              I've created a fun and interactive Rock, Paper, Scissors game
+              using a combination of <span>HTML</span>, <span>CSS</span> and
+              <span>JavaScript</span> . It's a classic game that allows you to
+              test your decision-making skills by choosing between rock, paper,
+              and scissors to compete against the computer.
             </p>
-          </overlay>
+          </div>
         </div>
       </div>
-      <div class="card-div">
-        <div class="my-work-heading-div">
-          <h2 class="my-work-heading">To Do App</h2>
+      <!-- !--------To Do App--------- -->
+
+      <div class="card-div slide-in-right">
+        <div class="projects-img-div">
+          <a
+            href="https://todoapp-vincourek.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img class="projects-img" src="/assets/todolist.png" alt="" />
+          </a>
         </div>
-        <div class="my-rock-paper-scissors-div">
-          <card class="my-work01">
-            <i
-              id="info-icon-work01"
-              class="fas fa-info fa-2x info-icon-class"
-            ></i>
+        <div class="projects-info-link-div">
+          <div class="projects-heading-div">
+            <h2 class="projects-heading">Rock&Paper&Scissors</h2>
+          </div>
+          <div class="projects-links-div">
             <a
-              class="my-work01-link"
+              class="projects-github"
+              href="https://github.com/Vincasmen/ToDo-App"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i
+            ></a>
+            <a
+              class="projects-netlify"
               href="https://todoapp-vincourek.netlify.app/"
               target="_blank"
-              rel="noreferrer noopener"
             >
-              <i id="icon-work01" class="fas fa-clipboard-check fa-10x"></i>
+              <img
+                class="projects-netlify"
+                src="./assets/netlify-svgrepo-com.svg"
+                alt="netlify-image"
+              />
             </a>
-          </card>
-          <overlay
-            id="my-work-info-overlay"
-            class="my-work-info-overlay overlay-hidden"
-          >
-            <p class="overlay-paragraph">
-              Classic To Do App, created with HTML, CSS and vanilla Java Script.
+          </div>
+          <div class="projects-info">
+            <p class="projects-info-paragraph">
+              I've developed a user-friendly To-Do App using <span> HTML</span>,
+              <span> CSS</span>, and <span> JavaScript </span>. This app is
+              designed to help you stay organized and manage your tasks
+              efficiently.
             </p>
-          </overlay>
+          </div>
         </div>
       </div>
+      <!-- !--------Surface calculator--------- -->
+
       <div class="card-div">
-        <div class="my-work-heading-div">
-          <h2 class="my-work-heading">Surface calculator</h2>
+        <div class="projects-img-div">
+          <a
+            href="https://cylinder-calc.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img
+              class="projects-img"
+              src="/assets/cylindeCalculator.png"
+              alt=""
+            />
+          </a>
         </div>
-        <div class="my-rock-paper-scissors-div">
-          <card class="my-work01">
-            <i
-              id="info-icon-work01"
-              class="fas fa-info fa-2x info-icon-class"
-            ></i>
+        <div class="projects-info-link-div">
+          <div class="projects-heading-div">
+            <h2 class="projects-heading">Rock&Paper&Scissors</h2>
+          </div>
+          <div class="projects-links-div">
             <a
-              class="my-work01-link"
+              class="projects-github"
+              href="https://github.com/Vincasmen/unit_transfers"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i
+            ></a>
+            <a
+              class="projects-netlify"
               href="https://cylinder-calc.netlify.app/"
               target="_blank"
-              rel="noreferrer noopener"
             >
-              <i id="icon-work01" class="fas fa-ruler fa-10x"></i>
+              <img
+                class="projects-netlify"
+                src="./assets/netlify-svgrepo-com.svg"
+                alt="netlify-image"
+              />
             </a>
-          </card>
-          <overlay
-            id="my-work-info-overlay"
-            class="my-work-info-overlay overlay-hidden"
-          >
-            <p class="overlay-paragraph">
-              Simple React application to calculate the surface of the cylinder
-              without base. For the design I used MUI.
+          </div>
+          <div class="projects-info">
+            <p class="projects-info-paragraph">
+              I've created a Surface Calculator app focused on calculating the
+              surface area of cylinders. This application was built using
+              <span> React </span> and the
+              <span> Material-UI (MUI)</span> framework, providing a
+              user-friendly and efficient way to compute cylinder surface areas.
             </p>
-          </overlay>
+          </div>
         </div>
       </div>
+      <!-- !--------Rock&Paper&Scissors--------- -->
+
       <div class="card-div">
-        <div class="my-work-heading-div">
-          <h2 class="my-work-heading">ENGETO project</h2>
+        <div class="projects-img-div">
+          <a
+            href="https://engeto-project.netlify.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img class="projects-img" src="/assets/engetoProject.png" alt="" />
+          </a>
         </div>
-        <div class="my-rock-paper-scissors-div">
-          <card class="my-work01">
-            <i
-              id="info-icon-work01"
-              class="fas fa-info fa-2x info-icon-class"
-            ></i>
+        <div class="projects-info-link-div">
+          <div class="projects-heading-div">
+            <h2 class="projects-heading">ENGETO project</h2>
+          </div>
+          <div class="projects-links-div">
             <a
-              class="my-work01-link"
+              class="projects-github"
+              href="https://github.com/Vincasmen/2.-projekt---JavaScript"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i
+            ></a>
+            <a
+              class="projects-netlify"
               href="https://engeto-project.netlify.app/"
               target="_blank"
-              rel="noreferrer noopener"
             >
-              <i id="icon-work01" class="fas fa-code fa-10x"></i>
+              <img
+                class="projects-netlify"
+                src="./assets/netlify-svgrepo-com.svg"
+                alt="netlify-image"
+              />
             </a>
-          </card>
-          <overlay
-            id="my-work-info-overlay"
-            class="my-work-info-overlay overlay-hidden"
-          >
-            <p class="overlay-paragraph">
-              Finall project for front-end academy to check out knowledge of a
-              basic web development practises.
+          </div>
+          <div class="projects-info">
+            <p class="projects-info-paragraph">
+              I've created my final project for the web course at ENGETO, a
+              fully responsive website that adapts seamlessly to all devices. It
+              features a <span> Swiper.js </span> image gallery and a light/dark
+              mode switch, and I utilized <span> HTML</span>,
+              <span> CSS </span> and <span> JavaScript</span>.
             </p>
-          </overlay>
+          </div>
         </div>
       </div>
-    </projects>
+    </section>
 
-    <form
-      class="form-group"
-      id="form"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-    >
-      <p class="input-group">
-        <label class="label"
-          >Your Name: <input class="form-control" type="text" name="name"
-        /></label>
-      </p>
-      <p class="input-group">
-        <label class="label"
-          >Your Email: <input class="form-control" type="email" name="email"
-        /></label>
-      </p>
+    <!-- !--------FORM SECTION--------- -->
+    <section id="contact" class="form-section">
+      <div class="form-heading-div">
+        <h1 class="form-heading">
+          <i class="far fa-address-book"></i> Contact Me
+        </h1>
+      </div>
+      <form
+        class="form-tag"
+        id="form"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
+        <input
+          class="form-control"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Name"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Name'"
+        />
 
-      <p class="input-group">
-        <label class="label"
-          >Message: <textarea class="form-control" name="message"></textarea>
-        </label>
-      </p>
-      <p class="button-par">
-        <button
-          id="button-form"
-          class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
-          type="submit"
-        >
-          Send
-        </button>
-      </p>
-    </form>
+        <input
+          class="form-control"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Email'"
+        />
 
-    <footer id="footer-div">
+        <textarea
+          id="text-area"
+          class="message-container"
+          name="message"
+          placeholder="Your text"
+          cols="30"
+          rows="5"
+          wrap="hard"
+          onfocus="this.placeholder = ''"
+          onblur="this.placeholder = 'Your text'"
+        ></textarea>
+
+        <button id="button-form" class="submit-btn" type="submit">Send</button>
+        <div class="message-modal">
+          <p class="modal-paragraph">Your message was succesfully sent.</p>
+        </div>
+      </form>
+    </section>
+
+    <!-- !--------FOOTER SECTION--------- -->
+
+    <footer id="footer-div" class="footer-section">
       <a
         class="footer-anchor"
         rel="noreferrer noopener"

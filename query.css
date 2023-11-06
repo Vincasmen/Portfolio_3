@@ -1,0 +1,155 @@
+@media (max-width: 600px) {
+  header {
+    position: relative;
+  }
+
+  header nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: var(--main-background);
+    background: var(--main-gradient);
+    width: 100%;
+  }
+
+  header nav li {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+    /* font-size: 30px; */
+  }
+}
+
+@media (min-width: 600px) {
+  .section__hero {
+    justify-content: center;
+  }
+  header nav {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .section__hero {
+    height: 100vh;
+  }
+
+  .projects-info {
+    padding-right: 2rem;
+  }
+
+  .form-tag {
+    width: 30rem;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    width: 66%;
+    margin: 0 auto;
+    left: 15%;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .section__hero {
+    width: 66%;
+    margin: 0 auto;
+  }
+
+  .projects-section {
+    width: 66%;
+    margin: 0 auto;
+  }
+
+  .projects-img-div {
+    border: 1.5px solid gray;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .projects-img {
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+  }
+  .projects-img:hover {
+    opacity: 1;
+  }
+  .projects-info {
+    padding-right: 0rem;
+  }
+
+  .form-section {
+    width: 66%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1166px) {
+  header {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .section__hero {
+    margin: 0 auto;
+  }
+
+  .projects-section {
+    gap: 4rem;
+  }
+
+  .projects-img-div {
+    width: 50%;
+  }
+
+  .card-div {
+    flex-direction: row;
+    gap: 1.5rem;
+    height: 25rem;
+  }
+
+  .projects-info-link-div {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1666px) {
+  header {
+    width: 55%;
+    margin: 0 auto;
+    right: 15rem;
+  }
+
+  .section__hero {
+    width: 55%;
+  }
+
+  .projects-section {
+    width: 55%;
+  }
+
+  .form-section {
+    width: 55%;
+  }
+}
+
+@media (min-width: 2560px) {
+  header {
+    width: 60%;
+    margin: 0 auto;
+    right: 20rem;
+  }
+}

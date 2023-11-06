@@ -1,43 +1,55 @@
 "use strict";
 
-//  !Dott menu and list
+const menuIcon = document.querySelector(".menu-icon");
+const menuList = document.querySelector("nav");
+const hamburgerIcon = document.querySelector(".fa-bars");
+const modalDiv = document.querySelector(".message-modal");
+const modalParagraph = document.createElement("p");
+const submitBtn = document.querySelector(".submit-btn");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const textArea = document.querySelector("#text-area");
 
-const dottBtn = document.getElementById("dott-icon");
-const headerList = document.getElementById("ul-id");
+const divTimeOut = () => {
+  setTimeout(() => {
+    modalDiv.style.display = "none";
+    modalDiv.classList.add("text-blur-out");
+    modalDiv.classList.remove("div-focus-in");
+  }, 2000);
+};
 
-dottBtn.addEventListener("click", function () {
-  headerList.classList.toggle("hidden-ul");
-  console.log("BtnClicked");
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  modalDiv.classList.add("div-focus-in");
+  modalDiv.style.display = "block";
+  console.log("clicked");
+  nameInput.value = "";
+  emailInput.value = "";
+  textArea.value = "";
+
+  divTimeOut();
 });
 
-//  !Sticky scroll nav bar
+menuIcon.addEventListener("click", () => {
+  hamburgerIcon.classList.toggle("fa-times");
+  menuList.style.display =
+    menuList.style.display === "block" ? "none" : "block";
+});
 
-const navBar = document.getElementById("nav-bar");
-const introDiv = document.getElementById("heading-introduction-div");
-window.onscroll = function () {
-  scrollFunction();
-};
-const sticky = navBar.offsetTop;
+let prevScrollPos = window.scrollY;
 
-function scrollFunction() {
-  if (window.pageYOffset >= sticky) {
-    navBar.classList.add("sticky");
-    introDiv.classList.add("padding");
+window.addEventListener("scroll", function () {
+  // current scroll position
+  const currentScrollPos = window.scrollY;
+
+  if (prevScrollPos > currentScrollPos) {
+    // user has scrolled up
+    document.querySelector(".header").style.top = "0";
   } else {
-    navBar.classList.remove("sticky");
-    introDiv.classList.remove("padding");
+    // user has scrolled down
+    document.querySelector(".header").style.top = "-100px";
   }
-}
 
-const infoIcon = document.querySelectorAll("#info-icon-work01");
-const infoOverlay = document.querySelectorAll("#my-work-info-overlay");
-
-console.log(infoIcon);
-
-for (let i = 0; i < infoIcon.length; i++) {
-  infoIcon[i].addEventListener("click", function () {
-    infoIcon[i].classList.toggle("absolute-class");
-    infoIcon[i].classList.toggle("info-icon-class");
-    infoOverlay[i].classList.toggle("overlay-hidden");
-  });
-}
+  // update previous scroll position
+  prevScrollPos = currentScrollPos;
+});
