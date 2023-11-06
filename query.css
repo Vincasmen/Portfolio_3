@@ -1,6 +1,7 @@
 @media (max-width: 600px) {
   header {
-    position: relative;
+    background-color: var(--main-background);
+    background: var(--main-gradient);
   }
 
   header nav {

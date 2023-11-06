@@ -147,14 +147,9 @@ header {
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
-  /* background-color: var(--main-background);
-background: var(--main-gradient); */
   height: 70px;
   width: 100%;
-  /* transform: translateY(-100px); */
   transition: 0.3s;
-  /* background-color: var(--main-background);
-background: var(--main-gradient); */
   backdrop-filter: blur(5px);
   z-index: 1;
 }

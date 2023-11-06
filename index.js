@@ -47,7 +47,7 @@ window.addEventListener("scroll", function () {
     document.querySelector(".header").style.top = "0";
   } else {
     // user has scrolled down
-    document.querySelector(".header").style.top = "-100px";
+    document.querySelector(".header").style.top = "-200px";
   }
 
   // update previous scroll position
