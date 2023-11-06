@@ -40,6 +40,7 @@
 @media (min-width: 768px) {
   .section__hero {
     height: 100vh;
+    margin-top: 0;
   }
 
   .projects-info {

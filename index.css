@@ -209,9 +209,10 @@ li a:hover {
 .section__hero {
   display: flex;
   margin: 1rem;
+  margin-top: 5rem;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 70vh;
+  height: 100%;
   gap: 2rem;
 }
 
