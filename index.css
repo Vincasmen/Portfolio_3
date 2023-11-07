@@ -316,7 +316,7 @@ li a:hover {
   height: 40rem;
   gap: 1rem;
   color: var(--main-font-color);
-  margin: 3rem 0rem 0rem 0rem;
+  margin: 3rem 1rem 0rem 1rem;
 }
 .form-heading {
   font-weight: bold;
